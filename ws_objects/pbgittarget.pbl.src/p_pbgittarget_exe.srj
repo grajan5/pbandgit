@@ -1,0 +1,15 @@
+﻿$PBExportHeader$p_pbgittarget_exe.srj
+$PBExportComments$Generated Application Executable Project
+EXE:pbgittarget.exe,,0,1,0
+CMP:0,0,0,2,0,0,1
+COM:DXC
+DES:Git Demo
+CPY:DXC Tech
+PRD:Git Demo
+PVS:1.0.0.1
+PVN:1,0,0,1
+FVS:1.0.0.1
+FVN:1,0,0,1
+MAN:0,asInvoker,0
+PBD:pbgittarget.pbl,,1
+PBD:pbgitlibrary2.pbl,,1
