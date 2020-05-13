@@ -40,7 +40,7 @@ end on
 type cb_2 from commandbutton within w_window1
 integer x = 590
 integer y = 620
-integer width = 402
+integer width = 650 
 integer height = 112
 integer taborder = 20
 integer textsize = -10
