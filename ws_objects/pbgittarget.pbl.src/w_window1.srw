@@ -40,7 +40,7 @@ end on
 type cb_2 from commandbutton within w_window1
 integer x = 590
 integer y = 620
-integer width = 650 
+integer width = 649
 integer height = 112
 integer taborder = 20
 integer textsize = -10
@@ -66,4 +66,9 @@ fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 string text = "Library1"
 end type
+
+event clicked;
+
+MessageBox('PBGIT','I belong to Library1')
+end event
 
