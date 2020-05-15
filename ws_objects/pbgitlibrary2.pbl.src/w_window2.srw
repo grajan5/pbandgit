@@ -30,8 +30,8 @@ end type
 global w_window2 w_window2
 
 event type integer of_add(integer arg1, integer arg2);
-arg1 = 1
-arg2 = 2
+arg1 = 10
+arg2 = 20
 
 Return arg1+arg2
 end event
@@ -61,7 +61,7 @@ boolean border = true
 borderstyle borderstyle = stylelowered!
 date maxdate = Date("2999-12-31")
 date mindate = Date("1800-01-01")
-datetime value = DateTime(Date("2020-05-15"), Time("16:46:23.000000"))
+datetime value = DateTime(Date("2020-05-15"), Time("17:17:18.000000"))
 integer textsize = -10
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
