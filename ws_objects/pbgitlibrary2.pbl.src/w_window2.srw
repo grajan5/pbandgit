@@ -22,11 +22,17 @@ boolean resizable = true
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
+event type integer of_add ( integer arg1,  integer arg2 )
 dp_1 dp_1
 cb_2 cb_2
 cb_1 cb_1
 end type
 global w_window2 w_window2
+
+event type integer of_add(integer arg1, integer arg2);
+
+Return arg1+arg2
+end event
 
 on w_window2.create
 this.dp_1=create dp_1
@@ -53,7 +59,7 @@ boolean border = true
 borderstyle borderstyle = stylelowered!
 date maxdate = Date("2999-12-31")
 date mindate = Date("1800-01-01")
-datetime value = DateTime(Date("2020-05-14"), Time("17:51:31.000000"))
+datetime value = DateTime(Date("2020-05-15"), Time("12:31:25.000000"))
 integer textsize = -10
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
