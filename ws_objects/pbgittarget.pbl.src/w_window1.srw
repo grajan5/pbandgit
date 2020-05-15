@@ -25,6 +25,15 @@ cb_1 cb_1
 end type
 global w_window1 w_window1
 
+forward prototypes
+public function integer of_divide (integer ai_arg1, integer ai_arg2)
+end prototypes
+
+public function integer of_divide (integer ai_arg1, integer ai_arg2);
+
+Return ai_arg1/ai_arg2
+end function
+
 on w_window1.create
 this.cb_2=create cb_2
 this.cb_1=create cb_1
