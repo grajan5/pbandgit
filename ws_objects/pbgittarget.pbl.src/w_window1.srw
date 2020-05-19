@@ -67,6 +67,10 @@ string facename = "Tahoma"
 string text = "Button3"
 end type
 
+event clicked;
+MessageBox('Test', 'I am button3')
+end event
+
 type cb_2 from commandbutton within w_window1
 integer x = 590
 integer y = 620
