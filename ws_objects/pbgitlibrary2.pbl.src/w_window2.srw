@@ -2,6 +2,8 @@
 forward
 global type w_window2 from window
 end type
+type cb_3 from commandbutton within w_window2
+end type
 type dp_1 from datepicker within w_window2
 end type
 type cb_2 from commandbutton within w_window2
@@ -23,6 +25,7 @@ long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
 event type integer of_add ( integer arg1,  integer arg2 )
+cb_3 cb_3
 dp_1 dp_1
 cb_2 cb_2
 cb_1 cb_1
@@ -37,19 +40,37 @@ Return arg1+arg2
 end event
 
 on w_window2.create
+this.cb_3=create cb_3
 this.dp_1=create dp_1
 this.cb_2=create cb_2
 this.cb_1=create cb_1
-this.Control[]={this.dp_1,&
+this.Control[]={this.cb_3,&
+this.dp_1,&
 this.cb_2,&
 this.cb_1}
 end on
 
 on w_window2.destroy
+destroy(this.cb_3)
 destroy(this.dp_1)
 destroy(this.cb_2)
 destroy(this.cb_1)
 end on
+
+type cb_3 from commandbutton within w_window2
+integer x = 1285
+integer y = 396
+integer width = 402
+integer height = 112
+integer taborder = 10
+integer textsize = -10
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "Mythily"
+end type
 
 type dp_1 from datepicker within w_window2
 integer x = 1472
@@ -61,7 +82,7 @@ boolean border = true
 borderstyle borderstyle = stylelowered!
 date maxdate = Date("2999-12-31")
 date mindate = Date("1800-01-01")
-datetime value = DateTime(Date("2020-05-15"), Time("17:17:18.000000"))
+datetime value = DateTime(Date("2020-05-19"), Time("18:21:37.000000"))
 integer textsize = -10
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
