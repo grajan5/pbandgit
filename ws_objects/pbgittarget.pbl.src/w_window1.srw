@@ -14,11 +14,12 @@ global type w_window1 from window
 integer width = 4754
 integer height = 1980
 boolean titlebar = true
-string title = "Untitled"
+string title = "GitHub Window"
 boolean controlmenu = true
 boolean minbox = true
 boolean maxbox = true
 boolean resizable = true
+windowstate windowstate = maximized!
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
@@ -67,6 +68,10 @@ string facename = "Tahoma"
 string text = "Button3"
 end type
 
+event clicked;
+MessageBox ('Github','Hey My new house is GitHub!!!')
+end event
+
 type cb_2 from commandbutton within w_window1
 integer x = 590
 integer y = 620
@@ -81,6 +86,10 @@ fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 string text = "Button2"
 end type
+
+event clicked;
+MessageBox('Msg2','My name is button2')
+end event
 
 type cb_1 from commandbutton within w_window1
 integer x = 498
