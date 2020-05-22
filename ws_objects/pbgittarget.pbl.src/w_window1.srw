@@ -90,7 +90,11 @@ string text = "Button3"
 end type
 
 event clicked;
+//<<<<<<< HEAD
 MessageBox ('Github','Hey My new house is GitHub!!!')
+//=======
+MessageBox('Test', 'I am button3')
+//>>>>>>> master
 end event
 
 type cb_2 from commandbutton within w_window1
