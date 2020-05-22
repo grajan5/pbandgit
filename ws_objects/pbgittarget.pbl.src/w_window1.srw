@@ -80,6 +80,9 @@ string facename = "Tahoma"
 string text = "Button5"
 end type
 
+event clicked;Open (w_window2)
+end event
+
 type cb_3 from commandbutton within w_window1
 integer x = 1307
 integer y = 972
