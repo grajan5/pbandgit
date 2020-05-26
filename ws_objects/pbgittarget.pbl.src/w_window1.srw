@@ -39,7 +39,7 @@ end on
 
 type cb_2 from commandbutton within w_window1
 integer x = 590
-integer y = 620
+integer y = 756
 integer width = 649
 integer height = 112
 integer taborder = 20
