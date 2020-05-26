@@ -80,7 +80,8 @@ string facename = "Tahoma"
 string text = "Button5"
 end type
 
-event clicked;Open (w_window2)
+event clicked;MessageBox('button5', 'Button5 opening window2')
+Open (w_window2)
 end event
 
 type cb_3 from commandbutton within w_window1
