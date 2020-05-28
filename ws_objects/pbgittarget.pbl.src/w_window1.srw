@@ -12,7 +12,7 @@ global type w_window1 from window
 integer width = 4754
 integer height = 1980
 boolean titlebar = true
-string title = "Untitled"
+string title = "Git window"
 boolean controlmenu = true
 boolean minbox = true
 boolean maxbox = true
